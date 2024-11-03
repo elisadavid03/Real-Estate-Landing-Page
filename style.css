@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #D6B884; 
+    --dark-color: black;
+    --secondary-color: white; 
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-optical-sizing: auto;
+	font-style: normal;
+	color: var(--dark-color);
+	line-height: 1.6;
+}
+
+/* Navbar */
+
+.navbar {
+    position: sticky; 
+    top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--dark-color);
+	padding: 30px 50px;
+	color: white;
+	height: 175px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+    display: block;
+}
+
+/* Nav-links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+    list-style: none;
+    font-size: 20px;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+  
+.nav-links a:hover {
+    color: var(--primary-color); 
+}
